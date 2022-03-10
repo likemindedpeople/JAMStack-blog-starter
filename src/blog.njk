@@ -6,7 +6,17 @@ layout: 'base.njk'
 <div class="section container">
   <h1 class="section-title">Recent articles</h1>
   <ul role="list" class="articles__list flow">
+    {%- for post in collections.post -%}
     <li>
+      <article class="snippet">
+        <h3 class="snippet__title"></h3>
+      </article>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+<!-- <li>
       <article class="snippet">
         <img
           src="/assets/blog/carbon-2021-06-11t092807.024.png"
@@ -146,6 +156,4 @@ layout: 'base.njk'
           >Continue Reading</a
         >
       </article>
-    </li>
-  </ul>
-</div>
+    </li> -->
