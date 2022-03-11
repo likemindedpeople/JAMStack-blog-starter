@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/likemindedpeople/JAMStack-blog-starter/issues"
   },
-  "homepage": "https://github.com/likemindedpeople/JAMStack-blog-starter#readme"
+  "homepage": "https://github.com/likemindedpeople/JAMStack-blog-starter#readme",
+  "dependencies": {
+    "luxon": "^2.3.1"
+  }
 }
