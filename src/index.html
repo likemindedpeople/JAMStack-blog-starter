@@ -37,8 +37,9 @@ layout: base.html
       this site is all about.
     </p>
     <ul role="list" class="articles__list flow">
-      {% for post in collections.featured | reverse %} {% include
-      'partials/snippet.html' %} {% endfor %}
+      {% for post in collections.featured | reverse %}
+        {% include 'partials/snippet.html' %}
+      {% endfor %}
     </ul>
   </div>
 </section>
