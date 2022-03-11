@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
   eleventyConfig.addFilter('postDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
   });
 
   return {
@@ -18,5 +18,7 @@ module.exports = function (eleventyConfig) {
       input: 'src',
       output: 'public',
     },
+    htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: 'njk',
   };
 };
