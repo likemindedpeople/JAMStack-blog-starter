@@ -1,6 +1,6 @@
 ---
 title: Homepage
-layout: base.njk
+layout: base.html
 ---
 
 <section class="hero">
@@ -38,7 +38,7 @@ layout: base.njk
     </p>
     <ul role="list" class="articles__list flow">
       {% for post in collections.featured | reverse %} {% include
-      './partials/snippet.njk' %} {% endfor %}
+      'partials/snippet.html' %} {% endfor %}
     </ul>
   </div>
 </section>
