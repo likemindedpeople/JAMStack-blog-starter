@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
-    {% include 'header.njk' %}
-    <main>
-      {{ content | safe }}
-    </main>
-    {% include 'footer.njk' %}
+    {% include './partials/header.njk' %}
+    <main>{{ content | safe }}</main>
+    {% include './partials/footer.njk' %}
   </body>
 </html>
