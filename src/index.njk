@@ -1,5 +1,5 @@
 ---
-title: My Homepage
+title: Homepage
 layout: base.njk
 ---
 
@@ -37,8 +37,9 @@ layout: base.njk
       this site is all about.
     </p>
     <ul role="list" class="articles__list flow">
-      {% for post in collections.featured | reverse %} {% include
-      'partials/snippet.njk' %} {% endfor %}
+      {% for post in collections.featured | reverse %}
+        {% include 'snippet.njk' %} 
+      {% endfor %}
     </ul>
   </div>
 </section>
